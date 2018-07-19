@@ -1,0 +1,65 @@
+<!--</body>-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Webové frameworky</title>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Webové frameworky</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reactjs.html">ReactJS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jquery.html">jQuery</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-secondary" id="framework">
+      <div class="row">
+        <div class="col-lg-2 col-md"><img id="framework_logo" src="img/reactjs_logo.svg"></div>
+        <div class="col-lg-10"><h1 id="framework_name" class="display-1">ReactJS</h1></div>
+      </div>
+    </div>
+
+    <main class="container">
+      <h1>Úvod</h1>
+      <p>React je JavaScriptová knihovna pro vytváření webových komponent. V pomyslném MVC představuje "V" neboli view vrstvu a dal by se tak přirovnat například Latte v Nette. React je však daleko více. Přináší totiž zásadní změnu paradigmatu. S Reactem už nepíšeme kód, který něco mění, ale kód, který popisuje, jak má vypadat výsledek, což je řádově snažší úloha. Dvojnásob to pak platí, pokud tím výsledkem je "těžká váha" v podobě DOMu(Document Object Model - stromová reprezetace toho co vidíte v prohlížeči jako HTML stránku + metody, kterými se dá upravovat či procházet).
+      </p>
+      <h1>Historie</h1>
+      <p>React spatřil světlo světa v květnu 2013. Opensourcoval ho Facebook, který ho už několik let před tím sám interně používal a vylepšoval. Prvotní vydání se však dočkalo velkého výsměchu. Odezva byla dokonce tak špatná, že Facebook chvíli uvažoval i o jeho stáhnutí. Terčem kritiky se stalo především míchání "HTML a programování". Podobné obavy nedávno vyjádřili i někteří prominentní čeští webaři. Postupně se však ukázalo, že došlo k pouze nepochopení základního konceptu a nejen FE vývojáři si začli rychle osvojovat a užívat nové fundamenty, které React přinesl.
+      </p>
+      <p>
+        K dnešnímu dni (květen 2016 má 6600 commitů, 41 000 stargazerů a 685 contributorů a je tak jedním z nejoblíbenějších a nejaktivnějších repozitářů na GitHubu. Facebook během této doby uvolnil i další JS projekty jako React Native (React pro iOS a Android) či Immutable.js (immutable kolekce).
+      </p>
+      <h1>Přínos reactu</h1>
+      <p>Nejzřejmější výhoda pro začátečníka je ta, že React nás prakticky úplně odstíní od DOMu. V React komponentách pouze deklarativně zadefinujeme strukturu (HTML) skládáním JS funkcí. Jinými slovy, popíšeme, jak má vypadat výsledná stránka na základě příchozích dat. React si z toho poskládá svůj vlastní virtuální DOM, který pak pomocí chytrých algoritmů porovnává s tím skutečným DOMem a když najde rozdíly, tak ho nejefektivnějším možným způsobem aktualizuje. My už pak jenom dodáváme nová data do jednotlivých komponent a tím pro nás veškerá práce končí. V prohlížeči vždy uvidíte aktuální pohled vzhledem k dodaným datům. Tohle je "deal breaker", který vám pravděpodobně není úplně zřejmý, pokud už nemáte předešlou trpkou zkušenost s imperativním přístupem u větší aplikace, což je typicky jQuery a fidlování s jednotlivými DOM elementy.
+      </p>
+      <br><br><br><br><br><br>
+    </main>
+    <footer class="container-fluid bg-dark text-light">
+    </footer>
+  </body>
+</html>

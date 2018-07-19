@@ -1,0 +1,80 @@
+<!--</body>-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Webové frameworky</title>
+    <style type="text/css"></style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Webové frameworky</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrap.html">Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reactjs.html">ReactJS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jquery.html">jQuery</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid bg-secondary" id="framework">
+      <div class="row">
+        <div class="col-lg-2 col-md"><img id="framework_logo" src="img/jquery_logo.gif"></div>
+        <div class="col-lg-10"><h1 id="framework_name" class="display-1">jQuery</h1></div>
+      </div>
+    </div>
+    <main class="container">
+      <h1>Úvod</h1>
+      <p>jQuery má jednoduchou syntaxi, výrazně zjednodušuje manipulaci s obsahem stránky, reakci na události, animace a používání AJAXu. Její největší síla ale pravděpodobně spočívá v obrovském množství jQuery pluginů, které můžeme pro své stránky stáhnout a získáme tak bez práce interaktivní galerie, carousely, rozšířené formulářové prvky a podobně. I když doba její největší popularity již pominula, stále by měla patřit do základního povědomí frontendistů a je nadále masově užívána nejpopulárnějšími frameworky jako je např. samotný CSS framework Bootstrap. Konkurenci jQuery v poslední době představují komplexnější vícevrstvé frameworky jako je např. Angular nebo React, naučit se je ovšem vyžaduje mnohem větší úsilí.</p>
+      <h1></h1>
+      <p>
+      </p>
+      <h1>Porovnání</h1>
+      <div class="row">
+        <div class="code col-lg-5 bg-secondary rounded text-white">
+          <h3>Čistý javascript</h3>
+          <br>
+            var x = document.getElementById("input_field").value;
+            <br>
+            document.getElementById("demo").innerHTML = "Hello World!"
+        </div>
+        <!--MEZERA-->
+        <div class="col-lg-1">
+        </div>
+
+        <div class="code col-lg-6 bg-secondary rounded text-white">
+          <h3>jQuery</h3>
+          <br>
+            var x = $("#input_field").val;
+            <br>
+            $("#demo").text(x)
+        </div>
+      </div>
+
+
+
+      <br><br><br><br><br><br>
+    </main>
+    <footer class="container-fluid bg-dark text-light">
+    </footer>
+  </body>
+</html>

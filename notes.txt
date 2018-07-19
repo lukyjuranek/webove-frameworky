@@ -1,0 +1,4 @@
+$("p").text("Hello world!");
+
+
+document.getElementById("p").innerHTML = "Hello World!";

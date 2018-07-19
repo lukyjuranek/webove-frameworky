@@ -1,0 +1,121 @@
+<!--</body>-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<title>Webové frameworky</title>
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="index.html">Webové frameworky</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="bootstrap.html">Bootstrap</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reactjs.html">ReactJS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="jquery.html">jQuery</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid bg-secondary" id="framework">
+			<div class="row">
+				<div class="col-lg-2 col-md">
+					<img id="framework_logo" src="img/bootstrap_logo.png">
+				</div>
+				<div class="col-lg-10">
+					<h1 id="framework_name" class="display-1">Bootstrap</h1>
+				</div>
+			</div>
+		</div>
+		<main class="container">
+			<h1>Úvod</h1>
+			<p>Bootstrap je jednoduchý a volně stažitelný framework pro tvorbu webu a webových aplikací. Obsahuje návrhářské šablony založené
+				na HTML a CSS, sloužící pro úpravu typografie, formulářů, tlačítek, navigace a dalších komponent rozhraní, stejně jako
+				další volitelná rozšíření JavaScriptu. Pro použití Bootstrapu jsou nutné základní znalosti HTML a CSS, interaktivní prvky
+				jako jsou tlačítka, boxy, menu a další kompletně nastavené a graficky zpracované elementy je totiž možné vložit pouze
+			pomocí HTML a CSS.</p>
+			<h1>Historie</h1>
+			<p>Zaměstnance Twitteru trápila nekonzistence různých aplikací ve firmě, jejich vzhled byl odlišný a byla nutná znalost konkrétního
+				stylu k jejich úpravě. Proto začali pracovat na univerzálním CSS frameworku, který firma nakonec uvolnila jako open-source.
+				To znamená, že jej můžete volně používat i ke komerčním účelům a nemusíte to ani nikde uvádět. Bootstrap určitě není něco,
+				za co byste se měli stydět, naopak se stal značkou, která zaručuje moderní a dobře fungující kabát pro web, kde je použitý.
+				To nejlepší je ale obrovské množství volně dostupných šablon, které jsou nápadité, vzhledově velmi rozmanité a po menší
+				úpravě poslouží jako fungující základ pro vaši práci. Začít používat CSS framework je pro vývojáře podobný posun jako
+				třeba začít používat CSS a nepsat styly přímo do HTML, jako se to dělalo v roce 1995. Framework si samozřejmě můžete vytvořit
+				i svůj vlastní, nicméně v tomto kurzu se budeme věnovat právě již existujícímu Bootstrapu. Budete pracovat rychleji a
+			levněji. Co více si přát?</p>
+			<h1>Výhody</h1>
+			<ul>
+				<li>
+					<b>Responzivita</b> - Bootstrap styly jsou dokonale přizpůsobené pro mobilní zařízení. Je tedy 100% responzivní. A právě
+					mobilní telefony jsou v dnešní době na webu již častější zařízení, než klasické počítače. Určitě nechcete, abyste přišli
+					o zákazníky jen proto, že někdo otevřel vaše stránky na mobilním telefonu a písmo je tak malé, že jej nemůže přečíst.
+				</li>
+				<li>
+					<b>Mobile-first</b> - Framework byl ve verzi 3 kompletně přepsán, aby podporoval mobile-first přístup. Jeho kód je tak kompaktnější
+					a podporuje dobré praktiky.
+				</li>
+				<li>
+					<b>Flat design</b> - Co dnes není flat? Váš web bude vypadat svěží a in. A když se trend změní, můžete si být jistí, že
+					Bootstrap na to zareaguje. A pokud se vám flat přeci jen nelíbí, můžete si stáhnout jakékoli jiné ze schémat, která jsou
+					pro Bootstrap dostupná (viz dále).
+				</li>
+				<li>
+					<b>Grid</b> - Obsahuje dvanáctisloupcový grid systém. Pokud již znáte výhody grid systému, víte, že ve většině případů úplně
+					nahradí pozicování elementů na stránce, které je potom navíc pravidelné a responzivní. Případně se o gridu dozvíte dále
+					v tomto kurzu.
+				</li>
+				<li>
+					<b>Je zdarma</b> - Bootstrap je zadarmo i pro komerční účely.
+				</li>
+			</ul>
+			<h1>Stránky používající Bootstrap</h1>
+			<br>
+			<ul id="web_examples_li">
+				<li>
+					<h3>Hyde + Hyde</h3>
+				</li>
+				<br>
+				<a href="https://www.hydearchitects.com" target="_blank">
+					<img class="web_examples_img" src="img/hyde+hyde.jpg">
+				</a>
+				<br>
+				<br>
+				<br>
+				<li>
+					<h3>Made Together</h3>
+				</li>
+				<br>
+				<a href="http://madetogether.com.au" target="_blank">
+					<img class="web_examples_img" src="img/made-together.jpg">
+				</a>
+			</ul>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</main>
+		<footer class="container-fluid bg-dark text-light">
+		</footer>
+	</body>
+</html>

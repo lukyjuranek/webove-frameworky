@@ -1,0 +1,101 @@
+<!--</body><meta http-equiv="refresh" content="0; url=reactjs.html" />-->
+<!--</body>-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<title>Webové frameworky</title>
+		<style type="text/css"></style>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="index.html">Webové frameworky</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="bootstrap.html">Bootstrap</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reactjs.html">ReactJS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="jquery.html">jQuery</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid bg-secondary" id="framework">
+			<div class="row">
+				<div class="col-sm-4 col-12">
+					<img id="framework_logo_i1" src="img/bootstrap_logo.png">
+				</div>
+				<div class="col-sm-4 col-12">
+					<img id="framework_logo_i2" src="img/reactjs_logo.svg">
+				</div>
+				<div class="col-sm-4 col-12">
+					<img id="framework_logo_i3" src="img/jquery_logo.gif">
+				</div>
+			</div>
+		</div>
+		<main class="container">
+			<h1>Co zde naleznete</h1>
+			<p>Na této stránce se můžete dozvědět spostu informací o jedněch z nejpoužívanějších javascript a css frameworků na světě. Pokud hledáte návod jak zakomponovat některý z frameworků na svůj web, tak ho určitě najdete v dokumentaci na officiálních stránkách(<a href="https://getbootstrap.com">Bootstrap</a>, <a href="https://reactjs.org">ReactJS</a>, <a href="https://jquery.com">jQuery</a>).
+			</p>
+			<p>Články jsou určeny pro lidi s alespoň základními znalostmi html, css a javascriptu. Pokud by jste ale chtěli rovnou některý framework využít, měli by jste být alespoň středně pokročilí.</p>
+			<h1>Co je to framework</h1>
+			<p>V minulosti docházelo k poměrně bouřlivému zdokonalování jazyků, jak těch programovacích, tak těch značkovacích (HTML) a případně dalších, např. stylovacího jazyka CSS. Jak čas běžel, jazyky začaly být v určitém ohledu již "hotové" a nyní umožňují vytvořit ty části aplikací, pro které jsou určené, velmi rychle a efektivně. I se sebedokonalejšími nástroji ovšem musíme stále pracovat, např. v CSS musíme pro každý náš projekt znovu a znovu definovat úplně základní styly, tedy že tabulka má mít rámeček nebo že tlačítko má být barevný obdélník. Elementy v prvních verzích jazyka HTML totiž nijak nastylované nebyly a kvůli zpětné kompatibilitě se to nesmí již nikdy změnit. Když již definujete ten samý rámeček pro tabulku v desátém projektu, nutně vás napadne vytvořit si nějakou knihovnu, kam si ty nejpoužívanější styly uložíte. Knihovnu budete kopírovat do svých projektů a rázem zde budou styly dostupné bez nutnosti ztrácet čas jejich definováním znovu a znovu. Webdesign je přeci o nápadu a ne o opisování rámečku tabulky nebo definování, že sleva má být zeleně. To je plýtvání vaším časem. A že by každý web měl mít unikátní design? To sice ano, ale v naprosté většině případů stačí jen drobně upravit ten základní, tabulky budou mít na většině webů rámečky, tlačítka budou většinou obdélníková a pod. Když je vaše knihovna dostatečně velká, tak velká, že poskytuje styly pro naprostou většinu částí současných webových stránek, říkáme ji framework. Framework je tedy ucelená knihovna nebo sada knihoven, která dává dohromady hotové řešení. A takovou CSS knihovnu vytvořili v roce 2011 ve firmě Twitter, dnes je známá jako framework Bootstrap a je nejpopulárnějším CSS frameworkem na světě.</p>
+			<p>Vyskytují se námitky, že použitím frameworku bude kód pomalý či jinak neefektivní a že čas, který se ušetří použitím cizího kódu, se musí věnovat nastudování frameworku. Nicméně při jeho opakovaném nasazení nebo ve velkém projektu dojde k výrazné úspoře času. Při odinstalování frameworku již nebude možné některé aplikace spustit.
+			</p>
+			<h1>Alternativy</h1>
+			<ul>
+				<li>Bootsrap
+					<ul>
+						<li>Pure.CSS</li>
+						<li>Materialize </li>
+					</ul>
+				</li>
+				<li>ReactJS
+					<ul>
+						<li>AngularJS</li>
+						<li>Vue.js</li>
+					</ul>
+				</li>
+			
+			<br><br><br><br><br><br>
+		</main>
+		<footer class="container-fluid bg-dark text-light">
+		</footer>
+		
+		
+		
+		
+		<script>
+			$(document).ready(hide_header());
+			$(window).resize(hide_header());	
+			
+			function hide_header() {
+				if ($(this).width() < 567) {
+					$('#framework').hide();
+					$('main').css({"margin-top": "56px"});
+				}
+				else {
+					$('#framework').show();
+					$('main').css({"margin-top": "0"});
+				}
+			};
+		</script>
+	</body>
+</html>
